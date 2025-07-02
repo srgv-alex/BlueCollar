@@ -1,0 +1,24 @@
+.svg {
+	display: block;
+	color: var(--primary-color);
+	transition: color 0.2s ease-in;
+	&:hover {
+		color: var(--accent);
+	}
+}
+.svg-faceebok {
+	width: 19px;
+	height: 18px;
+}
+.svg-twitter {
+	width: 20px;
+	height: 17px;
+}
+.svg-pinterest {
+	width: 19px;
+	height: 19px;
+}
+.svg-instagram {
+	width: 18px;
+	height: 19px;
+}

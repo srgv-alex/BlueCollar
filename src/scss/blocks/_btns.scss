@@ -1,0 +1,37 @@
+.btn,
+a.btn {
+	display: inline-block;
+	padding: 19px 42px;
+
+	background-color: var(--accent);
+
+	font-size: 20px;
+	font-weight: 400;
+	color: var(--primary-color);
+	text-align: center;
+	text-decoration: none;
+	transition: background-color 0.2s ease-in;
+	&:hover {
+		background-color: #e49520;
+	}
+
+	&--wide {
+		width: 100%;
+	}
+}
+
+.header-btn {
+	padding: 20px 48px;
+	color: #f4f4f4;
+	border: 2px solid var(--primary-color);
+	background-color: var(--primary-color);
+	&:hover {
+		background-color: #141829;
+	}
+}
+
+.hero-btn {
+	padding: 17px 26px;
+
+	max-width: 227px;
+}

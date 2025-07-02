@@ -1,0 +1,12 @@
+.nav {
+	display: flex;
+	gap: 55px;
+}
+.nav__item a {
+	color: #222;
+	transition: 0.2s ease-in;
+
+	&:hover {
+		color: #fff;
+	}
+}

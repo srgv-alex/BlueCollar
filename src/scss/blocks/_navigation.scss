@@ -1,0 +1,16 @@
+@use './base/mixins' as *;
+.navigation {
+	position: relative;
+	padding: 9px 10px 9px 45px;
+	margin-left: 11px;
+	background-color: var(--accent);
+	font-size: 20px;
+	@include m768() {
+		display: none;
+	}
+}
+.navigation__wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}

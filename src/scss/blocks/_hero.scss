@@ -1,0 +1,43 @@
+@use './base/mixins' as *;
+.hero {
+	width: 100%;
+	padding-block: 270px 230px;
+	background-image: url(./../img/header/main-bg.webp);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	color: #fff;
+	@include m1024() {
+		padding-block: 160px 110px;
+	}
+	@include m768() {
+		// padding-block: 15px 110px;
+	}
+}
+
+.hero__content {
+	display: grid;
+	padding-left: 10px;
+	gap: 30px;
+	max-width: 720px;
+	@include m768() {
+		max-width: 400px;
+	}
+	h1 {
+		@include m768() {
+			font-size: 40px;
+		}
+	}
+}
+
+.hero__slogan {
+	display: flex;
+	padding-inline: 20px 40px;
+	gap: 10px;
+	max-width: 662px;
+	background: rgba(255, 255, 255, 0.2);
+	text-transform: capitalize;
+	@include m768() {
+		display: none;
+	}
+}
