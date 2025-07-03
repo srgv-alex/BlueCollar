@@ -1,0 +1,77 @@
+@use './base/mixins' as *;
+
+.blue-collar {
+	padding-block: 145px;
+}
+
+.blue-collar__wrapper {
+	display: flex;
+	column-gap: 58px;
+}
+
+.blue-collar__content {
+	padding-block: 18px;
+}
+
+.blue-collar__img {
+	display: flex;
+	img {
+		flex-shrink: 0;
+	}
+}
+
+.blue-collar__title {
+	margin-bottom: 12px;
+}
+
+.icon-title__wrapper {
+	margin-bottom: 18px;
+}
+
+.blue-collar__text {
+	margin-bottom: 22px;
+	p + p {
+		margin-top: 10px;
+	}
+}
+
+.blue-collar__experience {
+	max-width: 198px;
+	padding: 24px 50px 40px;
+	background: #f4f4f4;
+}
+
+.blue-collar__row {
+	display: flex;
+	align-items: center;
+	font-family: 'Mulish', sans-serif;
+	text-align: center;
+	column-gap: 44px;
+
+	span {
+		display: inline-block;
+		font-size: 80px;
+		line-height: 1.1;
+		color: var(--accent);
+		margin-bottom: 16px;
+	}
+
+	p {
+		font-size: 20px;
+		color: var(--primary-color);
+	}
+}
+
+.blue-collar__list {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	row-gap: 10px;
+	line-height: 1.58824;
+	letter-spacing: 0.02em;
+}
+
+.blue-collar__item {
+	font-size: 17px;
+	line-height: 1.58824;
+}

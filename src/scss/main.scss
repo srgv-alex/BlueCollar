@@ -15,11 +15,15 @@
 @use './blocks/header';
 @use './blocks/navigation';
 @use './blocks/hero';
+@use './blocks/blue-collar';
+@use './blocks/main-service';
+@use './blocks/our-service';
 @use './blocks/footer';
 
 // Блоки, Элементы
 @use './blocks/logo';
 @use './blocks/nav';
+@use './blocks/tab-content';
 @use './blocks/btns';
 @use './blocks/titles';
 @use './blocks/input';

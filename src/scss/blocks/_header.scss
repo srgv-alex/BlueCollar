@@ -13,11 +13,26 @@
 		flex-direction: column;
 		row-gap: 35px;
 	}
+	@include m425() {
+		padding-top: 10px;
+		padding-left: 0;
+		row-gap: 17px;
+	}
+	@include m360() {
+		padding-top: 25px;
+		margin-bottom: 0;
+	}
 }
 
 .header-contacts {
 	display: flex;
 	gap: 76px;
+	@include m425() {
+		position: relative;
+		flex-direction: column;
+		row-gap: 20px;
+		z-index: 1;
+	}
 }
 
 .header-contacts__item {

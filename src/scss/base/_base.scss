@@ -14,3 +14,14 @@ body {
 p + p {
 	margin-top: 1em;
 }
+
+.icon-title {
+	display: inline-flex;
+	column-gap: 10px;
+	align-items: center;
+	padding-inline: 20px;
+	color: var(--primary-color);
+	background-color: #f4f4f4;
+	text-transform: capitalize;
+	margin-bottom: 22px;
+}

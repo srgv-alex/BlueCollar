@@ -1,3 +1,4 @@
+@use './base/mixins' as *;
 .btn,
 a.btn {
 	display: inline-block;
@@ -30,8 +31,11 @@ a.btn {
 	}
 }
 
-.hero-btn {
+.hero-btn,
+a.hero-btn {
 	padding: 17px 26px;
-
 	max-width: 227px;
+	@include m425() {
+		padding: 10px 30px;
+	}
 }

@@ -13,6 +13,12 @@
 	@include m768() {
 		// padding-block: 15px 110px;
 	}
+	@include m425() {
+		height: 37vh;
+		display: flex;
+		align-items: center;
+		padding-block: 0 0;
+	}
 }
 
 .hero__content {
@@ -23,9 +29,16 @@
 	@include m768() {
 		max-width: 400px;
 	}
+	@include m425() {
+		max-width: 300px;
+		padding-left: 0;
+	}
 	h1 {
 		@include m768() {
 			font-size: 40px;
+		}
+		@include m425() {
+			font-size: 20px;
 		}
 	}
 }

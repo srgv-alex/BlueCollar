@@ -1,3 +1,4 @@
+@use './base/mixins' as *;
 .top-header {
 	padding-block: 21px;
 	background: #f2f2f2;
@@ -19,4 +20,7 @@
 	display: flex;
 	align-items: center;
 	gap: 20px;
+	@include m768() {
+		display: none;
+	}
 }
