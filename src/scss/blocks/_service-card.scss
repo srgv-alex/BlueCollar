@@ -1,0 +1,26 @@
+.service-grid-card {
+	padding: 50px 46px 58px 35px;
+	text-align: start;
+	background-color: #1c2752;
+}
+
+.service__img {
+	margin-bottom: 20px;
+}
+.service__header {
+	margin-bottom: 15px;
+}
+
+.service__title {
+}
+.service__text {
+	font-size: 17px;
+	margin-bottom: 22px;
+	color: #d2d2d2;
+}
+a.service-link {
+	color: #fff;
+	&:hover {
+		text-decoration: underline;
+	}
+}

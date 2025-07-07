@@ -1,0 +1,15 @@
+<section class="project">
+	<div class="container-m">
+		<span class='icon-title bg-white'>
+			<img src="./img/icons/note.svg" width='22' height='27' alt="icon">
+			<span>The Gallery</span>
+		</span>
+		<div class="project__header">
+			<h2 class="h2">Our Recent Projects</h2>
+		</div>
+
+		<div class="project__cards">
+			@@loop("./project-card.html", "./data/project.json")
+		</div>
+	</div>
+</section>

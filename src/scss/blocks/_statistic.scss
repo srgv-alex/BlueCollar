@@ -1,0 +1,141 @@
+@use './base/mixins' as *;
+
+.statistic {
+	font-family: 'Mulish', sans-serif;
+	h2 {
+		@include m425() {
+			font-size: 30px;
+		}
+	}
+}
+
+.statistic__wrapper {
+	display: flex;
+	column-gap: 70px;
+	@include m1024() {
+		flex-direction: column;
+		text-align: center;
+	}
+}
+.statistic__img {
+	position: relative;
+	flex-shrink: 0;
+}
+.statistic__quantity {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 100px 80px 125px 80px;
+	max-width: 560px;
+	width: 100%;
+	background: rgba(28, 39, 82, 0.86);
+	@include m425() {
+		margin-top: 75px;
+		padding: 0;
+	}
+	@include m375() {
+		width: 120%;
+	}
+}
+.statistic__quantity-wrapper {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	row-gap: 25px;
+	@include m425() {
+		row-gap: 10px;
+	}
+}
+.statistic__quantity-item {
+	display: flex;
+	align-items: center;
+	max-width: 400px;
+}
+.statistic__numbers {
+	flex-shrink: 0;
+	padding-top: 16px;
+	padding-left: 21px;
+	padding-bottom: 16px;
+	width: 110px;
+	font-size: 24px;
+	line-height: 1.45833;
+	color: var(--primary-color);
+	background-color: var(--accent);
+}
+.statistic__text {
+	padding: 15px 20px;
+	flex-grow: 1;
+	font-size: 25px;
+	line-height: 1.4;
+	border: 1px solid #fff;
+	border-left: none;
+	color: #fff;
+}
+.statistic__content {
+	padding-top: 103px;
+	max-width: 590px;
+	@include m1024() {
+		margin: 0 auto;
+		padding-top: 50px;
+		width: 100%;
+	}
+}
+
+.statistic__content-header {
+	margin-bottom: 11px;
+}
+
+.statistic__content-text {
+	margin-bottom: 40px;
+	font-size: 17px;
+	line-height: 1.58824;
+	@include m425() {
+		margin-bottom: 25px;
+	}
+}
+
+.statistic__content_text {
+	font-size: 17px;
+	line-height: 1.58824;
+}
+.statistic__content-wrapper {
+	display: flex;
+	flex-direction: column;
+	row-gap: 30px;
+	padding-left: 52px;
+	max-width: 502px;
+	@include m1024() {
+		text-align: start;
+	}
+}
+.statistic__content-item {
+	position: relative;
+	&::before {
+		position: absolute;
+		content: '';
+		top: 0;
+		left: -63px;
+		width: 32px;
+		height: 32px;
+		background-image: url(../img/icons/tick.svg);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		@include m425() {
+			left: -40px;
+		}
+	}
+	p + p {
+		margin-top: 0;
+	}
+}
+.statistic__content-title {
+	font-size: 20px;
+	line-height: 1.4;
+	margin-bottom: 8px;
+	color: var(--primary-color);
+}

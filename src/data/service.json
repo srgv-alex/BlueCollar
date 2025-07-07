@@ -1,0 +1,32 @@
+[
+	{
+		"img": "condition.webp",
+		"title": "Air condition service",
+		"text": "Services are able to service your entire electrical infrastructure from Thermal Imaging of your air condition from switch boards."
+	},
+	{
+		"img": "electrical.webp",
+		"title": "Electrical installation",
+		"text": "The art electrical installations that provide all the necessary electrical solutions to suit your business, home or industrial premises."
+	},
+	{
+		"img": "general.webp",
+		"title": "General Builder",
+		"text": "We provide impeccable safety assessments to both commercial, residential properties. Our adept & knowledgeable electricians."
+	},
+	{
+		"img": "security.webp",
+		"title": "Security System",
+		"text": "Utilized for measuring flow, temperature level & pressure in the manufacturing industry array of technology is ensure productivity."
+	},
+	{
+		"img": "service.webp",
+		"title": "Service & maintenance",
+		"text": "Electrical Services are able to service your entire electrical infrastructure from Thermal Imaging of your switch boards."
+	},
+	{
+		"img": "house.webp",
+		"title": "House Extensions",
+		"text": "Traditionally, electricity is supplied through overhead network poles, where the cable is connected to your building."
+	}
+]

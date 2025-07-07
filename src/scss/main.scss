@@ -18,12 +18,16 @@
 @use './blocks/blue-collar';
 @use './blocks/main-service';
 @use './blocks/our-service';
+@use './blocks/statistic';
+@use './blocks/project';
 @use './blocks/footer';
 
 // Блоки, Элементы
 @use './blocks/logo';
 @use './blocks/nav';
 @use './blocks/tab-content';
+@use './blocks/service-card';
+@use './blocks/project-card';
 @use './blocks/btns';
 @use './blocks/titles';
 @use './blocks/input';

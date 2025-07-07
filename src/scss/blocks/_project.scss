@@ -1,0 +1,21 @@
+@use './base/mixins' as *;
+
+.project {
+	padding-block: 140px 197px;
+	background-color: var(--primary-color);
+	text-align: center;
+
+	h2 {
+		color: #fff;
+	}
+}
+
+.project__header {
+	margin-bottom: 50px;
+}
+
+.project__cards {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 30px;
+}

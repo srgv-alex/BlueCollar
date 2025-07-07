@@ -43,6 +43,7 @@
 }
 
 .tab__content {
+	text-align: start;
 	@include m1024() {
 		width: 100%;
 	}
