@@ -20,6 +20,9 @@
 @use './blocks/our-service';
 @use './blocks/statistic';
 @use './blocks/project';
+@use './blocks/testimonial';
+@use './blocks/clients';
+@use './blocks/price';
 @use './blocks/footer';
 
 // Блоки, Элементы
@@ -32,6 +35,8 @@
 @use './blocks/titles';
 @use './blocks/input';
 @use './blocks/icons';
+@use './blocks/testimonial-form';
+@use './blocks/price-card';
 // Скрипты
 
 @use './blocks/fancy-box';

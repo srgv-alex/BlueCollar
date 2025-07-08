@@ -8,14 +8,27 @@
 	h2 {
 		color: #fff;
 	}
+	@include m1024() {
+		padding-block: 30px 50px;
+	}
 }
 
 .project__header {
 	margin-bottom: 50px;
+	@include m425() {
+		margin-bottom: 20px;
+	}
 }
 
 .project__cards {
 	display: grid;
+
 	grid-template-columns: repeat(4, 1fr);
 	gap: 30px;
+	@include m1024() {
+		grid-template-columns: repeat(2, auto);
+	}
+	@include m425() {
+		grid-template-columns: repeat(1, auto);
+	}
 }

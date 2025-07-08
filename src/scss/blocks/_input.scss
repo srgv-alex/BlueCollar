@@ -1,13 +1,27 @@
+@use './base/mixins' as *;
 .input {
-	padding: 10px 20px;
-	border: 1px solid #c0c0c0;
+	padding: 20px 44px;
+	border: 1px solid #ccc;
 	border-radius: 8px;
+	background-color: #fff;
 	color: #000;
 
 	transition: all 0.2s ease-in;
+
+	&::placeholder {
+		font-size: 17px;
+		line-height: 1.58824;
+		color: var(--primary-color);
+	}
 
 	// &:active,
 	// &:focus {
 	// 	box-shadow: 0 0 0 3px rgba(21, 156, 228, 0.6);
 	// }
+}
+
+.input-text {
+	margin-bottom: 15px;
+	resize: none;
+	height: 150px;
 }

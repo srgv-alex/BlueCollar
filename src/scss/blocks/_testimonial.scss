@@ -1,0 +1,127 @@
+@use './base/mixins' as *;
+
+.testimonial {
+	padding-block: 152px;
+	@include m768() {
+		padding-block: 30px;
+	}
+	@include m425() {
+		h2,
+		h3 {
+			font-size: 35px;
+		}
+	}
+}
+
+.testimonial__wrapper {
+	display: flex;
+	gap: 45px;
+	margin-bottom: 103px;
+	@include m768() {
+		flex-direction: column;
+		text-align: center;
+		margin-bottom: 40px;
+	}
+}
+
+.testimonial-col-1 {
+	flex-shrink: 0;
+	max-width: 591px;
+	@include m1024() {
+		flex-shrink: 1;
+	}
+	@include m768() {
+		margin: 0 auto;
+	}
+}
+
+.testimonial__header {
+	margin-bottom: 45px;
+	@include m768() {
+		margin-bottom: 20px;
+	}
+}
+
+.testimonial-card {
+	padding: 41px;
+	padding-bottom: 38px;
+	margin-bottom: 40px;
+	border: 1px solid #ddd;
+}
+.testimonial-card__row {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	padding-bottom: 21px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #dcdcdc;
+}
+.testimonial-card__inner {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.testimonial-card__info {
+	p + p {
+		margin-top: 0;
+	}
+}
+.testimonial-card__img {
+	img {
+		object-fit: cover;
+	}
+}
+.testimonial-card__name {
+	font-family: 'Mulish', sans-serif;
+	font-size: 22px;
+	line-height: 1.4;
+	color: var(--primary-color);
+}
+
+.testimonial-card__text {
+	margin-bottom: 23px;
+	font-style: italic;
+	font-weight: 700;
+}
+.testimonial-card__controls {
+	display: flex;
+	gap: 21px;
+}
+
+.testimonial-question {
+	padding: 58px 40px;
+	background-color: var(--accent);
+	color: var(--primary-color);
+}
+
+.testimonial-question__title {
+	font-family: 'Mulish', sans-serif;
+	font-size: 25px;
+	margin-bottom: 13px;
+}
+.testimonial-question__text {
+	margin-bottom: 17px;
+}
+.testimonial-question__call {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	a {
+		display: block;
+		font-family: 'Mulish', sans-serif;
+		font-size: 30px;
+		color: #fff;
+	}
+}
+
+.testimonial-col-2 {
+	width: 100%;
+	@include m768() {
+		margin: 0 auto;
+		width: auto;
+	}
+	@include m425() {
+		width: 100%;
+	}
+}

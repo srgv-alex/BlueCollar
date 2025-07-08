@@ -4,19 +4,26 @@
 	padding: 21px;
 	padding-bottom: 26px;
 	max-width: 320px;
+	width: 100%;
+	margin: 0 auto;
 	background-color: #fff;
+	transition: transform 0.3s ease-in;
+
 	h4 {
-		max-width: 247px;
 		color: var(--primary-color);
 	}
 
 	img {
 		margin-bottom: 27px;
 	}
+	&:hover {
+		transform: scale(1.03);
+	}
 }
 .project__content {
 	display: flex;
 	flex-direction: column;
+	text-align: center;
 	gap: 4px;
 }
 

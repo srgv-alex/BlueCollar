@@ -1,0 +1,25 @@
+@use './base/mixins' as *;
+
+.clients {
+	text-align: center;
+}
+
+.clients__header {
+	margin-bottom: 44px;
+}
+.clients__items {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	@include m768() {
+		flex-wrap: wrap;
+		row-gap: 15px;
+	}
+}
+.clients-item {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	@include m768() {
+	}
+}

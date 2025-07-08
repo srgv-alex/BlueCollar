@@ -1,0 +1,47 @@
+@use './base/mixins' as *;
+
+.price {
+	padding: 139px 120px;
+	padding-bottom: 130px;
+	background: #f4f4f4;
+}
+
+.price-top {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 59px;
+}
+
+.price-top__inner {
+	max-width: 570px;
+}
+
+.price-top__text {
+	max-width: 585px;
+}
+
+.price__down {
+	display: flex;
+	gap: 80px;
+}
+.price-affordable {
+	max-width: 550px;
+}
+.price-affordable__row {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+	margin-bottom: 9px;
+}
+.price__down-title {
+	font-family: 'Mulish', sans-serif;
+	font-size: 20px;
+	line-height: 1.4;
+	color: var(--primary-color);
+}
+.price__down-desc {
+	font-size: 17px;
+	line-height: 1.58824;
+	padding-left: 47px;
+}
