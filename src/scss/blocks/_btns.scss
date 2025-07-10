@@ -39,3 +39,13 @@ a.hero-btn {
 		padding: 10px 30px;
 	}
 }
+.subscribe-btn {
+	padding: 20px 44px;
+	font-size: 17px;
+	line-height: 1.58824;
+	background-color: #fff;
+	transition: background-color 0.3s ease-in;
+	&:hover {
+		background-color: #a1783a;
+	}
+}

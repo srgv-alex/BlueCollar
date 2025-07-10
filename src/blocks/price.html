@@ -1,4 +1,4 @@
-<section class="price">
+<section class="price none">
 	<div class="container">
 		<div class="price-top">
 			<div class="price-top__inner">
@@ -18,7 +18,7 @@
 			</p>
 		</div>
 		<div class="price__cards">
-			@@include("./price-card.html")
+			@@loop("./price-card.html", "./data/price-card.json")
 		</div>
 		<div class="price__down">
 			<div class="price-affordable">

@@ -1,7 +1,15 @@
 @use './base/mixins' as *;
 
 .price__cards {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 30px;
 	margin-bottom: 62px;
+	@include m768() {
+		grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+		justify-content: center;
+		gap: 15px;
+	}
 }
 
 .price-card {
@@ -11,6 +19,13 @@
 	background: #fff;
 	p + p {
 		margin-top: 0;
+	}
+	@include m768() {
+		margin: 0 auto;
+		width: 100%;
+	}
+	@include m360() {
+		max-width: 320px;
 	}
 }
 .price-card__title {
@@ -31,6 +46,9 @@
 	font-size: 32px;
 	line-height: 1.1;
 	color: var(--primary-color);
+	@include m1024() {
+		font-size: 21px;
+	}
 }
 .price-card__desc {
 	font-size: 15px;
@@ -46,6 +64,9 @@
 	display: flex;
 	align-items: center;
 	gap: 12px;
+	@include m1024() {
+		font-size: 14px;
+	}
 }
 
 .price-card__btn {

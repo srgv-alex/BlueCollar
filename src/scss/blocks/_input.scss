@@ -25,3 +25,19 @@
 	resize: none;
 	height: 150px;
 }
+
+.subscribe-input {
+	width: 390px;
+	padding: 20px 15px;
+	background-color: transparent;
+	border: 2px solid #fff;
+	border-radius: 0;
+	&::placeholder {
+		font-size: 17px;
+		line-height: 1.58824;
+		color: #fff;
+	}
+	@include m375() {
+		width: 300px;
+	}
+}

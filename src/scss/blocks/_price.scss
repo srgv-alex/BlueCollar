@@ -1,9 +1,18 @@
 @use './base/mixins' as *;
 
 .price {
-	padding: 139px 120px;
+	padding-block: 140px 128px;
 	padding-bottom: 130px;
 	background: #f4f4f4;
+	@include m1024() {
+		padding-block: 35px 35px;
+	}
+
+	h2 {
+		@include m768() {
+			font-size: 20px;
+		}
+	}
 }
 
 .price-top {
@@ -11,6 +20,10 @@
 	justify-content: space-between;
 	align-items: center;
 	margin-bottom: 59px;
+	@include m768() {
+		justify-content: center;
+		margin-bottom: 20px;
+	}
 }
 
 .price-top__inner {
@@ -19,14 +32,26 @@
 
 .price-top__text {
 	max-width: 585px;
+	@include m768() {
+		display: none;
+	}
 }
 
 .price__down {
 	display: flex;
 	gap: 80px;
+	@include m768() {
+		flex-direction: column;
+		align-items: center;
+	}
+	@include m425() {
+		gap: 40px;
+	}
 }
 .price-affordable {
 	max-width: 550px;
+	@include m768() {
+	}
 }
 .price-affordable__row {
 	display: flex;
@@ -44,4 +69,10 @@
 	font-size: 17px;
 	line-height: 1.58824;
 	padding-left: 47px;
+}
+
+.price-fixed {
+	@include m768() {
+		max-width: 550px;
+	}
 }
