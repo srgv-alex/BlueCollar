@@ -49,6 +49,9 @@
 	@include m425() {
 		row-gap: 10px;
 	}
+	@include m375() {
+		display: none;
+	}
 }
 .statistic__quantity-item {
 	display: flex;

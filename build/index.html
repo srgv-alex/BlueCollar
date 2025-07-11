@@ -6,15 +6,12 @@
 	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
 	<meta name="viewport" content="width=360, initial-scale=1, shrink-to-fit=no">
 
-	<title>Стартовый шаблон</title>
+	<title>BlueCollar</title>
 	<link rel="stylesheet" href="./css/main.css">
-
-	<link rel="icon" type="image/x-icon" href="">
-	<link rel="apple-touch-icon" sizes="180x180" href="">
 </head>
 
 <body class="sticky-footer">
-	<section class="top-header none">
+	<section class="top-header">
 	<div class="container">
 		<div class="top-header__wrapper">
 			<p class="top-header__clock">Opening Hours: 06:00 to 20:00</p>
@@ -40,11 +37,31 @@
 					</svg>
 				</a>
 			</div>
+			<div class="header-nav-btn">
+				<button type='button' class="mobile-nav-btn" id="closeMobileNav">
+					<span class='mobile-nav-btn__icon'></span>
+				</button>
+			</div>
 		</div>
 
 	</div>
 </section>
-	<header class="header none">
+	<div class="mobile-nav-overlay"></div>
+<div class="mobile-nav">
+	<div class="mobile-nav__panel">
+		<div class="mobile-nav__panel-content">
+			<div class="column-nav">
+				<a href="#!">Home</a>
+				<a href="#!">About Us</a>
+				<a href="#!">Pages</a>
+				<a href="#!">Blog</a>
+				<a href="#!">Contact Us</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<header class="header">
 
 	<div class="container">
 		<div class="header-row">
@@ -110,7 +127,7 @@
 	</section> -->
 
 	<main class="main">
-		<section class="hero none">
+		<section class="hero">
 	<div class="container">
 		<div class="hero__content">
 			<div class="hero__slogan">
@@ -124,7 +141,7 @@
 		</div>
 	</div>
 </section>
-		<section class="blue-collar none">
+		<section class="blue-collar">
 	<div class="container">
 		<div class="blue-collar__wrapper">
 			<div class="blue-collar__img">
@@ -167,7 +184,7 @@
 
 	</div>
 </section>
-		<section class="main-service none">
+		<section class="main-service">
 	<div class="container">
 		<div class="main-service__wrapper">
 			<span class='icon-title'>
@@ -299,7 +316,7 @@
 </div>
 	</div>
 </section>
-		<section class="our-service none">
+		<section class="our-service">
 	<div class="container">
 		<span class='icon-title bg-white'>
 			<img src="./img/icons/note.svg" width='22' height='27' alt="icon">
@@ -379,7 +396,7 @@
 		</div>
 	</div>
 </section>
-		<section class="statistic none">
+		<section class="statistic">
 	<div class="container container-lg">
 
 		<div class="statistic__wrapper">
@@ -446,7 +463,7 @@
 		</div>
 	</div>
 </section>
-		<section class="project none">
+		<section class="project">
 	<div class="container-m">
 		<span class='icon-title bg-white'>
 			<img src="./img/icons/note.svg" width='22' height='27' alt="icon">
@@ -485,7 +502,7 @@
 		</div>
 	</div>
 </section>
-		<section class="testimonial none">
+		<section class="testimonial">
 	<div class="container">
 		<div class="testimonial__wrapper">
 			<div class="testimonial-col-1">
@@ -593,7 +610,7 @@
 		</section>
 	</div>
 </section>
-		<section class="price none">
+		<section class="price">
 	<div class="container">
 		<div class="price-top">
 			<div class="price-top__inner">
@@ -770,7 +787,7 @@
 		</div>
 	</div>
 </section>
-		<section class="updated none">
+		<section class="updated">
 	<div class="container">
 		<div class="updated__row">
 			<span class='icon-title'>
@@ -843,7 +860,7 @@
 		</div>
 	</div>
 </section>
-		<section class="subscribe none">
+		<section class="subscribe">
 	<div class="container">
 		<div class="subscribe__wrapper">
 			<div class="subscribe__content">
@@ -903,18 +920,71 @@
 			</div>
 
 		</div>
+		<div class="footer-row">
+			<div class="footer__inner">
+				<div class="footer__desc">
+					<p>
+						We are here to fit the needs of your basic services for your dream building whether its a
+						commercial, residential or industry.
+					</p>
+				</div>
+				<div class="footer__social">
+					<a href="#!" target='_blank' aria-label='instagram'>
+						<img src="./img/footer-social/footer-insta.svg" alt="icon">
+					</a>
+					<a href="#!" target='_blank' aria-label='faceebok'>
+						<img src="./img/footer-social/footer-faceebok.svg" alt="icon">
+					</a>
+					<a href="#!" target='_blank' aria-label='twiter'>
+						<img src="./img/footer-social/footer-twiter.svg" alt="icon">
+					</a>
+					<a href="#!" target='_blank' aria-label='pinterest'>
+						<img src="./img/footer-social/footer-pinterest.svg" alt="icon">
+					</a>
+
+				</div>
+			</div>
+
+			<div class="footer__links">
+				<div class="footer__column">
+					<h4 class="footer__title">Explore</h4>
+					<ul class="footer-nav">
+						<li class="footer-nav__item"><a href="#!">About Us</a></li>
+						<li class="footer-nav__item"><a href="#!">Pricing</a></li>
+						<li class="footer-nav__item"><a href="#!">Team</a></li>
+						<li class="footer-nav__item"><a href="#!">Blog</a></li>
+						<li class="footer-nav__item"><a href="#!">Contact Us</a></li>
+					</ul>
+				</div>
+				<div class="footer__column">
+					<h4 class="footer__title">Quick Links</h4>
+					<ul class="footer-nav">
+						<li class="footer-nav__item"><a href="#!">Home</a></li>
+						<li class="footer-nav__item"><a href="#!">Services</a></li>
+						<li class="footer-nav__item"><a href="#!">Service Single</a></li>
+						<li class="footer-nav__item"><a href="#!">Projects</a></li>
+						<li class="footer-nav__item"><a href="#!">Projects Single</a></li>
+					</ul>
+				</div>
+				<div class="footer__column">
+					<h4 class="footer__title">Utility Pages</h4>
+					<ul class="footer-nav">
+						<li class="footer-nav__item"><a href="#!">Style Guide</a></li>
+						<li class="footer-nav__item"><a href="#!">Changelog</a></li>
+						<li class="footer-nav__item"><a href="#!">Licenses</a></li>
+						<li class="footer-nav__item"><a href="#!">Protected Page</a></li>
+						<li class="footer-nav__item"><a href="#!">404 Page</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
 	</div>
 
 </footer>
 
-
-
-
-	<!-- Vendors
-	<script src="./../js/tiny-slider/tiny-slider.js"></script> -->
-
 	<!-- Скрипты -->
 
+	<script src="./js/mobile-nav.js"></script>
 	<script src="./js/tab.js"></script>
 	<script src="./js/main.js"></script>
 

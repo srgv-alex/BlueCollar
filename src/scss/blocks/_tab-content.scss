@@ -8,11 +8,15 @@
 	display: none;
 	@include m768() {
 		padding: 33px 37px 31px 45px;
+		display: none;
 	}
 }
 
 .tab.active {
 	display: block;
+	@include m768() {
+		display: none;
+	}
 }
 .tab__row {
 	display: flex;

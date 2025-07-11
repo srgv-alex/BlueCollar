@@ -2,11 +2,18 @@
 
 .blue-collar {
 	padding-block: 145px;
+	@include m768() {
+		padding-block: 10px;
+	}
 }
 
 .blue-collar__wrapper {
 	display: flex;
 	column-gap: 58px;
+	@include m768() {
+		flex-direction: column;
+		text-align: center;
+	}
 }
 
 .blue-collar__content {
@@ -15,8 +22,12 @@
 
 .blue-collar__img {
 	display: flex;
+
 	img {
 		flex-shrink: 0;
+		@include m768() {
+			width: 100%;
+		}
 	}
 }
 
@@ -47,6 +58,13 @@
 	font-family: 'Mulish', sans-serif;
 	text-align: center;
 	column-gap: 44px;
+	@include m768() {
+		justify-content: center;
+	}
+	@include m425() {
+		flex-direction: column;
+		gap: 20px;
+	}
 
 	span {
 		display: inline-block;
